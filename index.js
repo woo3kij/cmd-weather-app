@@ -10,7 +10,8 @@ const request = require('request');
 
 const apiKey = '12b0d5f204bb544da1c49ba64c87c765';
 const city = 'london';
-const url = `http://api.openweathermap.org/data/2.5/weather?q=${city}&APPID=${apiKey}`;
+const units = 'units=metric';
+const url = `http://api.openweathermap.org/data/2.5/weather?q=${city}&${units}&APPID=${apiKey}`;
 
 request(url, function(err, response, body) {
     if (err) {
