@@ -18,7 +18,7 @@ request(url, function(err, response, body) {
         console.log('error:', error);
     } else {
         const weather = JSON.parse(body);
-        const message = `It's ${weather.main.temp} degrees in ${weather.name}!`;
+        const message = `It's ${weather.main.temp} degrees in ${weather.name}.`;
         console.log(message);
     }
 });
